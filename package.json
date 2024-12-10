@@ -1,0 +1,13 @@
+{
+    "name": "keego-advantage-automation",
+    "version": "1.0.0",
+    "description": "Projeto de automação de testes com Cypress e Cucumber",
+    "main": "index.js",
+    "scripts": {
+        "test": "cypress run"
+    },
+    "dependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+        "cypress": "^13.16.1"
+    }
+}

@@ -1,8 +1,0 @@
-{
-    "baseUrl": "https://www.advantageonlineshopping.com",
-    "integrationFolder": "cypress/integration",
-    "supportFile": "cypress/support/index.js",
-    "viewportWidth": 1280,
-    "viewportHeight": 720
-  }
-  

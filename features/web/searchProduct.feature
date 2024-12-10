@@ -1,7 +1,7 @@
-Feature: Product search and cart validation
+Feature: Buscar Produto, Adicionar ao Carrinho e Validar no Checkout
 
-  Scenario: Search and add product to cart
-    Given I am logged in
-    When I search for "headphones"
-    And I add the first product to the cart
-    Then the product should appear in the cart
+  Scenario: Buscar e adicionar um produto ao carrinho
+    Given que eu acesse a página de busca
+    When eu busco por "Laptop"
+    And eu adiciono o primeiro produto ao carrinho
+    Then eu devo ser redirecionado para a página de checkout

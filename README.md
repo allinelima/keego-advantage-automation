@@ -56,7 +56,11 @@ keego-advantage-automation/
 ├── package.json # Dependências do projeto
 └── README.md # Instruções de uso
 ```
+## O projeto está dividido em:
 
+> Testes Web: Localizados em cypress/integration/web
+Testes API: Localizados em cypress/integration/api
+Page Objects: Localizados em cypress/support/page_objects
 
 ## Como Usar:
 1. **Clone o repositório:** `git clone https://github.com/seu-usuario/keego-advantage-automation.git`

@@ -1,18 +1,18 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
+const cucumber = require('@badeball/cypress-cucumber-preprocessor').addCucumberPreprocessorPlugin;
+const browserify = require('@badeball/cypress-cucumber-preprocessor/browserify').default;
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://advantageonlineshopping.com',
-    supportFile: 'cypress/support/index.js',
-    specPattern: 'cypress/e2e/**/*.feature',
-    env: {
-      username: 'test_user',
-      password: 'test_password'
+    setupNodeEvents(on, config) {
+      // Adicionar o Cucumber Preprocessor
+      cucumber(on, config);
+      
+      // Configurar o Browserify para processar os arquivos feature
+      on('file:preprocessor', browserify(config));
+      
+      return config;
     },
-    viewportWidth: 1280,
-    viewportHeight: 720,
-    video: true,  
-    screenshotOnRunFailure: true,  
-    defaultCommandTimeout: 10000  
-  }
+    specPattern: '**/*.feature',  // Define onde encontrar os arquivos .feature
+  },
 });

@@ -1,17 +1,17 @@
 [
   {
-    "description": "  Como um cliente \n  Quero fazer uma busca por um produto desejado\n  Para que possa adicionar ao carrinho e fazer checkout",
+    "description": "  Como um cliente quero fazer uma busca pelo produto desejado\n  adicionar ao carrinho e confirmar se o produto está na tela de pagamento",
     "keyword": "Feature",
-    "name": "Fluxo de compra",
+    "name": "Buscar por um produto",
     "line": 1,
-    "id": "fluxo-de-compra",
+    "id": "buscar-por-um-produto",
     "tags": [],
-    "uri": "fluxoDeCompra.feature",
+    "uri": "busca-compras.feature",
     "elements": [
       {
-        "id": "fluxo-de-compra;busca-de-produtos",
+        "id": "buscar-por-um-produto;busca-de-produtos",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 6,
         "name": "Busca de produtos",
         "tags": [],
         "type": "scenario",
@@ -19,57 +19,57 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 7,
             "name": "que esteja no site Advantage Demo",
             "result": {
               "status": "passed",
-              "duration": 948000000
+              "duration": 393000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "busque por um produto",
+            "result": {
+              "status": "passed",
+              "duration": 6354000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "busque por um produto",
-            "result": {
-              "status": "passed",
-              "duration": 5840000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
             "name": "selecione o produto desejado",
             "result": {
               "status": "passed",
-              "duration": 433000000
+              "duration": 430000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 10,
             "name": "adicione ao carrinho",
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 573000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
+            "line": 11,
             "name": "clique em checkout",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 198000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
+            "line": 12,
             "name": "os produtos devem estar incluídos no carrinho na tela de pagamento",
             "result": {
               "status": "passed",

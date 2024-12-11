@@ -1,18 +1,12 @@
-const { defineConfig } = require('cypress');
-const cucumber = require('@badeball/cypress-cucumber-preprocessor').addCucumberPreprocessorPlugin;
-const browserify = require('@badeball/cypress-cucumber-preprocessor/browserify').default;
+const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
+    // We've imported your old cypress plugins here.
+    // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
-      // Adicionar o Cucumber Preprocessor
-      cucumber(on, config);
-      
-      // Configurar o Browserify para processar os arquivos feature
-      on('file:preprocessor', browserify(config));
-      
-      return config;
+      return require('./cypress/plugins/index.js')(on, config)
     },
-    specPattern: '**/*.feature',  // Define onde encontrar os arquivos .feature
+    specPattern: 'cypress/e2e/**/*.{feature,js}',
   },
-});
+})

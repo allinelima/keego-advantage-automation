@@ -1,0 +1,83 @@
+[
+  {
+    "description": "  Como um cliente \n  Quero fazer uma busca por um produto desejado\n  Para que possa adicionar ao carrinho e fazer checkout",
+    "keyword": "Feature",
+    "name": "Fluxo de compra",
+    "line": 1,
+    "id": "fluxo-de-compra",
+    "tags": [],
+    "uri": "fluxoDeCompra.feature",
+    "elements": [
+      {
+        "id": "fluxo-de-compra;busca-de-produtos",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Busca de produtos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que esteja no site Advantage Demo",
+            "result": {
+              "status": "passed",
+              "duration": 1676000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "busque por um produto",
+            "result": {
+              "status": "passed",
+              "duration": 6801000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "selecione o produto desejado",
+            "result": {
+              "status": "passed",
+              "duration": 455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "adicione ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 584000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "clique em checkout",
+            "result": {
+              "status": "passed",
+              "duration": 214000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "os produtos devem estar incluídos no carrinho na tela de pagamento",
+            "result": {
+              "status": "passed",
+              "duration": 138000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

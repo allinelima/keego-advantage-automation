@@ -4,10 +4,10 @@ it.only('Alterar imagem de um produto', () => {
   const productId = 10
   const userId = 608250760
 
-  cy.fixture('ps5.jpeg').then(fileContent => {
+  cy.fixture('ps5.jpg').then(fileContent => {
     const file = Cypress.Blob.base64StringToBlob(fileContent, 'image/jpeg');
     const formData = new FormData();
-    formData.append('file', file, 'ps5.jpeg');
+    formData.append('file', file, 'ps5.jpg');
     cy.request({
       method: 'POST',
       url: `https://www.advantageonlineshopping.com/catalog/api/v1/product/image/${userId}/${source}/${color}?product_id=${productId}`,
